@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM1</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        }
+        .container {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        }
+        h1 {
+        margin: 0;
+        color: #333;
+        }
+        p {
+        color: #666;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <script>
+            const container1 = document.createElement("div");
+            container1.className = "container";
+            
+            const heading1 = document.createElement("h1");
+            heading1.textContent = "안녕하세요!";
+        
+            const paragraph1 = document.createElement("p");
+            paragraph1.textContent = "저는 소프트웨어학과에서 공부하는 강대완입니다!";
+        
+            container1.appendChild(heading1);
+            container1.appendChild(paragraph1);
+        
+            document.body.appendChild(container1);
+        </script>
+        </body>
+</body>
+</html>

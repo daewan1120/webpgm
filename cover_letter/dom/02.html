@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e6f7ff;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            margin: 0;
+            color: #005580;
+        }
+        p {
+            color: #0080ff;
+        }
+        </style>
+    </head>
+</head>
+<body>
+    <script>
+        const container2 = document.createElement("div");
+        container2.className = "container";
+    
+        const heading2 = document.createElement("h1");
+        heading2.textContent = "안녕하세요! 자기소개 페이지 2입니다.";
+    
+        const paragraph2 = document.createElement("p");
+        paragraph2.textContent = "제 목표는 게임을 통해 세상에 감동과 즐거움을 주는 개발자가 되는 것입니다.";
+    
+        container2.appendChild(heading2);
+        container2.appendChild(paragraph2);
+    
+        document.body.appendChild(container2);
+        </script>
+</body>
+</html>
