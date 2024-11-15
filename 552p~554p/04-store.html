@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h3>일기쓰기</h3>
+    <hr>
+    <form>
+        <label id="date_label">
+            <script>document.write("오늘 " + new Date().toLocaleDateString());</script>
+            <br>
+            <textarea id="memo" cols="30" rows="5"></textarea>
+        </label>
+        <br>
+        <input type="button" value="저장" onclick="store()">
+        <input type="button" value="보기" onclick="view()">
+    </form>
+</head>
+<body>
+    <h3>일기쓰기</h3>
+    <hr>
+    <form>
+        <label id="date_label">
+            <script>document.write("오늘 " + new Date().toLocaleDateString());</script>
+            <br>
+            <textarea id="memo" cols="30" rows="5"></textarea>
+        </label>
+        <br>
+        <input type="button" value="저장" onclick="store()">
+        <input type="button" value="보기" onclick="view()">
+    </form>
+</body>
+</html>
